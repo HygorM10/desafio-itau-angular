@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from 'src/pages/home/home.component';
 import { HeaderComponent } from 'src/common/header/header.component';
+import { FooterComponent } from 'src/common/footer/footer.component'
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -14,7 +15,8 @@ import { RepositoriesService } from './repositories.service';
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

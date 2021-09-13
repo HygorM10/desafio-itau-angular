@@ -14,6 +14,7 @@ import { faStar, faShareAlt } from '@fortawesome/free-solid-svg-icons';
 export class HomeComponent implements OnInit {
 
   repositorys: Repository[] = [];
+  errors: boolean = false;
 
   faStar = faStar;
   faShareAlt = faShareAlt;
@@ -24,7 +25,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.service
       .getRepositories()
-      .subscribe(resposta => this.repositorys = resposta);
+      .subscribe(resposta => { this.repositorys = resposta }, error => { this.errors = true });
   }
 
 }
