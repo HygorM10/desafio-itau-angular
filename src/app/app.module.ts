@@ -10,6 +10,7 @@ import { FooterComponent } from 'src/common/footer/footer.component'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { RepositoriesService } from './repositories.service';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RepositoriesService } from './repositories.service';
   imports: [
     BrowserModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AppRoutingModule
   ],
   providers: [
     RepositoriesService
