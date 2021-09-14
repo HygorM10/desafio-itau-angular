@@ -26,13 +26,12 @@
                   <fa-icon id="icon" [icon]="faShareAlt"></fa-icon>
                   <small class="text-muted">{{repository.forks}}</small>
                 </p>
-                <a href="#" class="btn btn-primary">Ir Pulls</a>
+                <a [routerLink]="['/pulls', repository.owner.login, repository.name]" class="btn btn-primary">Ir Pulls</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <Footer></Footer>
   </div>
 </div>

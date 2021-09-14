@@ -5,11 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from 'src/pages/home/home.component';
 import { HeaderComponent } from 'src/common/header/header.component';
-import { FooterComponent } from 'src/common/footer/footer.component'
+import { FooterComponent } from 'src/common/footer/footer.component';
+import { PullsComponent } from 'src/pages/pulls/pulls.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { RepositoriesService } from './repositories.service';
+import { PullsService } from './pulls.service';
+
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -17,7 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PullsComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,8 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule
   ],
   providers: [
-    RepositoriesService
+    RepositoriesService,
+    PullsService
   ],
   bootstrap: [AppComponent]
 })

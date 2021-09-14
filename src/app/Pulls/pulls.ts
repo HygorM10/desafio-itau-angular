@@ -4,5 +4,5 @@ export class Pulls {
   title?: string;
   created_at?: string;
   body?: string;
-  user?: User;
+  user: User = new User;
 }
