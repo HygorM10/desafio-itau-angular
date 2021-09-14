@@ -594,8 +594,10 @@ pre code {
 }
 
 @media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
+
+  #response,
+  #response2 {
+    max-width: 50px;
   }
 }
 
@@ -10958,7 +10960,6 @@ body {
   flex-grow: 1;
   min-height: calc(100vh - 56px);
   margin-left: -225px;
-  margin-top: 90px;
 }
 
 .sb-sidenav-toggled #layoutSidenav #layoutSidenav_nav {

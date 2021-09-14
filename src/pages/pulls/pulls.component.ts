@@ -5,7 +5,7 @@ import { Pulls } from 'src/app/Pulls/pulls';
 
 import { PullsService } from 'src/app/pulls.service';
 
-import { faStar, faShareAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'Pulls',
@@ -19,6 +19,8 @@ export class PullsComponent implements OnInit {
   errors: boolean = false;
   name: string = '';
   login: string = '';
+
+  faCalendarAlt = faCalendarAlt;
 
   constructor(private route: ActivatedRoute, private service: PullsService) { }
 

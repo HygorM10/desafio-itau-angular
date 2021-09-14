@@ -7,12 +7,12 @@ import { PullsComponent } from 'src/pages/pulls/pulls.component';
 const routes: Routes = [
   { path: 'index', component: HomeComponent },
   { path: 'pulls/:name/:login', component: PullsComponent },
-  { path: '', component: AppComponent },
+  // { path: '', component: AppComponent },
   { path: '', redirectTo: '/index', pathMatch: 'full' },
 ];
 
 @NgModule({
   exports: [RouterModule],
-  imports: [RouterModule.forRoot(routes)]
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })]
 })
 export class AppRoutingModule { }
